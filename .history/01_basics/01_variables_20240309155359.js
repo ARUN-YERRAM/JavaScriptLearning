@@ -7,9 +7,7 @@ let accountState;
 // accountId = 2 // not allowed
 
 
-console.log("gdfdfg");
-console.log("hfgdury");
-
+conso
 accountEmail = "hc@hc.com"
 accountPassword = "21212121"
 accountCity = "Bengaluru"

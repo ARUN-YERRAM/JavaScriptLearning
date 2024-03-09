@@ -8,8 +8,7 @@ let accountState;
 
 
 console.log("gdfdfg");
-console.log("hfgdury");
-
+cons
 accountEmail = "hc@hc.com"
 accountPassword = "21212121"
 accountCity = "Bengaluru"

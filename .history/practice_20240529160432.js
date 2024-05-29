@@ -482,7 +482,7 @@ console.log(o);
 // sum or max or min ...........
 
 
-const as = arr.reduce((acc,curr) => {
+const as = arr.reduce(function(acc,curr) {
     acc = acc + curr;
     return acc;
 },0);

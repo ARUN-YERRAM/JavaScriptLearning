@@ -482,7 +482,7 @@ console.log(o);
 // sum or max or min ...........
 
 
-const as = arr.reduce((acc,curr) => {
+const as = arr.reduce(function(acc,curr) {
     acc = acc + curr;
     return acc;
 },0);
@@ -507,20 +507,17 @@ const output = dict.reduce(function(acc,curr) {
     return acc;
 } ,{});
 
-
-const re = dict.filter((x) =>x.age < 30).map((x) => x.firstname);
-const res = dict.reduce((acc,curr)=> {
-    if(curr.age < 30) {
-        acc.push(curr.firstname);
+const ar = [];
+// const res = dict.filter((x) =>x.age < 30).map((x) => x.firstname);
+const res = dict.reduce(function (acc,curr) {
+    if(acc[curr.age] < 30) {
+        ar.push(acc[curr.firstname]);
     }
     return acc;
-},[]);
-
+});
 
 console.log(output);
 console.log(res);
-console.log(re);
-
-// console.log(ar);
+console.log(ar);
 
 

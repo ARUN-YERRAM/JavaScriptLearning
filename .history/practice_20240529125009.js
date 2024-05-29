@@ -389,10 +389,10 @@ const area = function(radius){
     return Math.PI*radius*radius;
 }
 
-Array.prototype.calculate = function(logic){
+Array.prototype.calculate = function(radius,logic){
     const res = []
     for(var i=0;i<this.length;i++){
-    res.push(logic(this[i]));
+    res.push(logic(radius[i]));
     } return res;
 }
 
@@ -403,124 +403,14 @@ const diameter = function(radius){
     return 2*radius;
 }
 
-// console.log(calculate(radius,area));
+console.log(calculate(radius,area));
 console.log(radius.map(area));
 // console.log(calculate(radius,diameter));
 console.log(radius.calculate(diameter));
 
-// console.log(calculate(radius,circumference));
+console.log(calculate(radius,circumference));
 
 // ................Functional Programming.......... 
 // ...............reusability  ,Modularity...........
 // ...............DRY...........
-
-
-
-
-
-
-
-// ..........Trust Issues with setTimeout().......
-// ...........setTimeout() is not a promise.......
-// ..........COncurrency model in javascript...........
-
-console.log("Start");
-
-setTimeout(function cb(){
-    console.log("Callback");
-},0);
-
-console.log("End");
-
-let start = new Date().getTime();
-let end = start;
-while(end < start + 10000){
-    end = new Date().getTime();
-}
-function cb(){
-    console.log("chdgf");
-}
-cb();
-
-console.log("Expires");
-// Interpreted language
-
-
-
-const arr = [1,2,3,4];
-function double(x){
-    return 2*x;
-}
-
-function triple(x){
-    return 3*x;
-}
-
-// function binary(x){
-//     return x.toString(2);
-// }
-const out = arr.map(double);
-const bin = arr.map((x) => x.toString(2));
-
-
-console.log(out);
-console.log(bin);
-
-// filter  
-// function isOdd(x){
-//     return x>3;
-// }
-const o = arr.filter((x) => x % 2 === 0);
-
-console.log(o);
-
-
-
-// reduce ------ single value answer......
-
-
-// sum or max or min ...........
-
-
-const as = arr.reduce((acc,curr) => {
-    acc = acc + curr;
-    return acc;
-},0);
-
-
-console.log(as);
-
-
-const dict = [
-    {firstname:"Arun",lastname:"Yerram",age:20},
-    {firstname:"Abhi",lastname:"Yerram",age:23},
-    {firstname:"Bharath",lastname:"Yerram",age:24},
-    {firstname:"Daddy",lastname:"Head",age:58}
-];
-
-const output = dict.reduce(function(acc,curr) {
-    if(acc[curr.age]) {
-        acc[curr.age] = ++acc[curr.age];
-    } else{
-        acc[curr.age] = 1;
-    }
-    return acc;
-} ,{});
-
-
-const re = dict.filter((x) =>x.age < 30).map((x) => x.firstname);
-const res = dict.reduce((acc,curr)=> {
-    if(curr.age < 30) {
-        acc.push(curr.firstname);
-    }
-    return acc;
-},[]);
-
-
-console.log(output);
-console.log(res);
-console.log(re);
-
-// console.log(ar);
-
 

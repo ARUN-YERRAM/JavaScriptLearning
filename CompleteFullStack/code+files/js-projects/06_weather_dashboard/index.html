@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather Dashboard</h1>
+      <div class="input-container">
+        <input type="text" id="city-input" placeholder="Enter city name" />
+        <button id="add-city-btn">Add City</button>
+      </div>
+
+      <h2>Saved Cities</h2>
+      <ul id="city-list">
+        <!-- Cities will be dynamically added here -->
+      </ul>
+
+      <h2>Weather Info</h2>
+      <div id="weather-container">
+        <p>Select a city to view its weather information.</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

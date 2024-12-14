@@ -1,4 +1,6 @@
 {
     "liveServer.settings.port": 5501,
-    "editor.acceptSuggestionOnEnter": "on"
+    "editor.acceptSuggestionOnEnter": "on",
+    "pieces.cloudCapabilities": "Blended",
+    "pieces.telemetry": true
 }

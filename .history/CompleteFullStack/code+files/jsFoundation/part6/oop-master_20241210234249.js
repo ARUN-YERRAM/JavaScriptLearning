@@ -142,7 +142,7 @@ class Employee {
       // throw new Error("Salary cannot be in negative");
     // }
     this.name = name;
-    this.#salary = salary;
+    this._salary = salary;
   }
 
   get salary() {
@@ -158,6 +158,5 @@ class Employee {
   }
 }
 let emp = new Employee("Alice", -50000);
-console.log(emp.salary);
-emp.salary = 6000;
 console.log(emp._salary);
+emp.salary = 60000;

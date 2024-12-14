@@ -81,14 +81,6 @@ let citiesPopulation = {
   Paris: 2200000,
 };
 
-let ans = []
-for(let i in citiesPopulation){
-  if(i == "New York"){
-    continue;
-  }
-  ans.push(i);
-}
-console.log(ans);
 let cityNewPopulations = {};
 // console.log(Object.values(citiesPopulation));
 
@@ -98,7 +90,7 @@ for (const city in citiesPopulation) {
   }
   cityNewPopulations[city] = citiesPopulation[city];
 }
-console.log(cityNewPopulations);
+// console.log(cityNewPopulations);
 
 /* 
 6. Use a `for-in` loop to loop through an object containing city populations. 

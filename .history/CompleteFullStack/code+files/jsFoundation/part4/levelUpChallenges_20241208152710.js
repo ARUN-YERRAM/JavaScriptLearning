@@ -88,7 +88,7 @@ for(let i in citiesPopulation){
   }
   ans.push(i);
 }
-console.log(ans);
+// console.log(ans);
 let cityNewPopulations = {};
 // console.log(Object.values(citiesPopulation));
 

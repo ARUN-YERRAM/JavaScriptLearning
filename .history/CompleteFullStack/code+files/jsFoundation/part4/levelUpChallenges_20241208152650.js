@@ -74,6 +74,7 @@ for (const tea of teaTypes) {
 
 */
 
+console.log(ans);
 let citiesPopulation = {
   London: 8900000,
   "New York": 8400000,
@@ -88,7 +89,6 @@ for(let i in citiesPopulation){
   }
   ans.push(i);
 }
-console.log(ans);
 let cityNewPopulations = {};
 // console.log(Object.values(citiesPopulation));
 

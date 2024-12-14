@@ -53,7 +53,7 @@ i = 1;
 do{
     total += i;
 }while(total <= 5)
-console.log(total);
+// console.log(total);
 
 /* 
 5. Write a `for` loop that multiplies each element in the array `[2, 4, 6]` by 2 and stores the results in a new array named `multipliedNumbers`.

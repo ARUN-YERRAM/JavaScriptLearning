@@ -158,6 +158,5 @@ class Employee {
   }
 }
 let emp = new Employee("Alice", -50000);
-console.log(emp.salary);
-emp.salary = 6000;
 console.log(emp._salary);
+emp.salary = 60000;

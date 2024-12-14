@@ -31,13 +31,13 @@ while (j > 0) {
 let teaCollection = [];
 let tea;
 
-// do {
-//   tea = prompt(`Enter your favourite tea (type "stop" to finish)`);
+do {
+  tea = prompt(`Enter your favourite tea (type "stop" to finish)`);
 
-//   if (tea !== "stop") {
-//     teaCollection.push(tea);
-//   }
-// } while (tea !== "stop");
+  if (tea !== "stop") {
+    teaCollection.push(tea);
+  }
+} while (tea !== "stop");
 
 /* 
 4. Write a `do while` loop that adds numbers from 1 to 3 and stores the result in a variable named `total`.
@@ -49,11 +49,6 @@ do {
   total += k;
   k++;
 } while (k <= 3);
-i = 1;
-do{
-    total += i;
-}while(total <= 5)
-console.log(total);
 
 /* 
 5. Write a `for` loop that multiplies each element in the array `[2, 4, 6]` by 2 and stores the results in a new array named `multipliedNumbers`.

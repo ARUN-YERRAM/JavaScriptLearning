@@ -73,7 +73,7 @@ class BankAccount {
 }
 
 let account = new BankAccount();
-console.log(account.deposit(100));
+
 console.log(account.getBalance());
 
 // Abstraction
@@ -97,15 +97,15 @@ class CoffeMachine {
 }
 
 let myMachine = new CoffeMachine();
-console.log(myMachine.start());
-console.log(myMachine.brewCoffee());
-console.log(myMachine.pressStartButton());
+// console.log(myMachine.start());
+// console.log(myMachine.brewCoffee());
+// console.log(myMachine.pressStartButton());
 
 // Polymorphism
 
 class Bird {
   fly() {
-    return `Bird Flying....`;
+    return `Flying....`;
   }
 }
 
@@ -117,8 +117,8 @@ class Penguin extends Bird {
 
 let bird = new Bird();
 let penguin = new Penguin();
-console.log(bird.fly());
-console.log(penguin.fly());
+// console.log(bird.fly());
+// console.log(penguin.fly());
 
 // static method
 
@@ -128,10 +128,10 @@ class Calculator {
   }
 }
 
-let miniCalc = new Calculator();
+// let miniCalc = new Calculator();
 // console.log(miniCalc.add(2, 3));
 
-console.log(Calculator.add(2, 3));
+// console.log(Calculator.add(2, 3));
 
 // Getters and setters
 
@@ -158,6 +158,5 @@ class Employee {
   }
 }
 let emp = new Employee("Alice", -50000);
-console.log(emp.salary);
-emp.salary = 6000;
 console.log(emp._salary);
+emp.salary = 60000;

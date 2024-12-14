@@ -128,10 +128,10 @@ class Calculator {
   }
 }
 
-let miniCalc = new Calculator();
+// let miniCalc = new Calculator();
 // console.log(miniCalc.add(2, 3));
 
-console.log(Calculator.add(2, 3));
+// console.log(Calculator.add(2, 3));
 
 // Getters and setters
 
@@ -158,6 +158,5 @@ class Employee {
   }
 }
 let emp = new Employee("Alice", -50000);
-console.log(emp.salary);
-emp.salary = 6000;
 console.log(emp._salary);
+emp.salary = 60000;

@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "William Shakespeare",
         "Mark Twain",
       ],
-      answer: "William Shakespeare"
+      answer: "William Shakespeare",
     },
   ];
 

@@ -12,11 +12,8 @@ const loadTasks = () => {
 };
 
 const removeTask = (text) => {
-    const tasks = loadTasks();
-    const newTasks = tasks.filter((task) => task.task !== text);
-    saveTasks(newTasks);
-    console.log("Task removed ", text);
-};
+    
+}
 
 const saveTasks = (tasks) => {
   const dataJSON = JSON.stringify(tasks);

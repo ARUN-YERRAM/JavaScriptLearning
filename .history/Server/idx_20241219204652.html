@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List</title>
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <input type="text" id="todoInput" placeholder="Enter a task">
+    <button id="addTaskButton">Add Task</button>
+    <ul id="todoList"></ul>
+
+    <input type="text" id=""
+
+    <script>
+        const input = document.getElementById('todoInput');
+        const button = document.getElementById('addTaskButton');
+        const list = document.getElementById('todoList');
+
+
+        button.addEventListener('click', () => {
+            const task = input.value.trim();
+            if (task) {
+                const listItem = document.createElement('li');
+                listItem.textContent = task;
+
+                // Add delete button
+                const deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Delete';
+                deleteButton.addEventListener('click', () => {
+                    listItem.remove();
+                });
+
+                listItem.appendChild(deleteButton);
+                list.appendChild(listItem);
+
+                input.value = ''; // Clear input
+            } else {
+                alert('Task cannot be empty!');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    padding: 10px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* Add spacing between items */
+    position:top;
+    
+}
+
+.nav ul li {
+    color: red;
+    font-size: 24px; /* Adjust font size */
+    cursor: pointer;
+    padding: 10px 20px 10px 20px; /* Adjust padding */
+    position: relative;
+}
+
+.nav ul li:hover {
+    color: white; /* Highlight effect on hover */
+    background-color: #333;
+    border-radius: 5px; 
+}

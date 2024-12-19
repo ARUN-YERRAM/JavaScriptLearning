@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding:0;
+    background-color:#1a1a1a1a;
+}
+body{
+    font-family:'Roboto',sans-serif;
+    color:#fff;
+    padding:10px;
+}
+.container{
+    display:none;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+div{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.nav, ul{
+    display:flex;
+    list-style:none;
+    color:red;
+    font-size:100px;
+}

@@ -20,7 +20,8 @@
 			"extensions": [
 				"esbenp.prettier-vscode",
 				"vscode-icons-team.vscode-icons",
-				"wayou.vscode-todo-highlight"
+				"wayou.vscode-todo-highlight",
+				"cweijan.vscode-mysql-client2"
 			],
 			"settings": {
 				"editor.fontSize": 32,

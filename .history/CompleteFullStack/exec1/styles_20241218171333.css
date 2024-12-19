@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background-color: #121212;
+    color:#0fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:30vh;
+    left:30vh;
+    z-index:1000;
+}
+.container{
+    width: 100%;
+    
+}

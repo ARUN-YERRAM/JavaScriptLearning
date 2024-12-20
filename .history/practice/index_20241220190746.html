@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch JSON Data</title>
+</head>
+<body>
+    <h1>Fetch JSON Data</h1>
+    <button id="fetchDataButton">Fetch Data</button>
+    <!-- <table id="output"><table/>
+         -->
+    <p id="output">JSON data will be displayed here:
+        
+
+    </p>
+
+    <script>
+        const fetchbut = document.getElementById("fetchDatabButton");
+        const output = document.getElementById("output");
+
+        fetchbut.addEventListener("click",async ()=>{
+            try{
+                const data = await fetch("http://localhost:3000/data");
+                if(!data.ok){
+                    throw new Error("Fetch data failed!!");
+                }
+                const jsonData = await data.json();
+                output.textContent = JSON.stringify(jsonData, null, 2);
+            }catch(err){
+                
+            }
+        })
+    </script>
+
+    <!-- <script>
+        const button = document.getElementById('fetchDataButton');
+        const output = document.getElementById('output');
+
+        button.addEventListener('click', async () => {
+            try {
+                const response = await fetch('http://localhost:3000/data');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+                output.textContent = JSON.stringify(data, null, 2);
+            } catch (error) {
+                output.textContent = `Error fetching data: ${error.message}`;
+            }
+        });
+    </script> -->
+</body>
+</html>

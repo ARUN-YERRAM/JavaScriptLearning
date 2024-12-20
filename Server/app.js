@@ -75,6 +75,9 @@ app.put("/student/:rollNo", async (req, res) => {
   }
 });
 
+// app.put("/student/:rollNo",async(req,res) => {
+
+// })
 // Delete a student document based on rollNo
 app.delete("/student/:rollNo", async (req, res) => {
   const rollNo = req.params.rollNo;

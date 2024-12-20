@@ -4,6 +4,7 @@ const fs = require("fs");
 // const filePath = path.join(__dirname, "data", "invoice.json");
 const filePath = require("./tasks.json");
 
+
 const loadTasks = () => {
     try{
         const dataBuffer = fs.readFileSync(filePath);
@@ -13,6 +14,8 @@ const loadTasks = () => {
         return [];
     }
 }
+
+
 const saveTasks = (tasks) => {
     const JsonData = JSON.stringify(tasks);
     fs.writeFileSync(filePath, JsonData);

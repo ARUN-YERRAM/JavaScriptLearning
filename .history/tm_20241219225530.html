@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display JSON Data</title>
+</head>
+<body>
+    <h1>JSON Data</h1>
+    <button id="fetchButton">Load Data</button>
+    <div id="dataDisplay"></div>
+
+    <script>
+        const fetchButton = document.getElementById('fetchButton');
+        const dataDisplay = document.getElementById('dataDisplay');
+
+        fetchButton.addEventListener('click', () => {
+            fetch('http://localhost:3000/api/data') // Fetch data from backend
+                .then(response => response.json()) // Parse JSON
+                .then(data => {
+                    // Display data in a table format
+                    let html = '<table border="1"><tr><th>ID</th><th>Name</th><th>Age</th></tr>';
+                    data.forEach(item => {
+                        html += `<tr><td>${item.id}</td><td>${item.name}</td><td>${item.age}</td></tr>`;
+                    });
+                    html += '</table>';
+                    dataDisplay.innerHTML = html;
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                });
+        });
+    </script>
+</body>
+</html>
